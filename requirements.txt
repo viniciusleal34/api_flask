@@ -27,7 +27,6 @@ cryptography==1.9
 Flask-Ask==0.9.7
 gunicorn==19.7.1
 idna==2.6
-MarkupSafe==1.0
 pycparser==2.18
 pyOpenSSL==17.0.0
 python-dateutil==2.7.2
