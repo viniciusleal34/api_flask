@@ -23,8 +23,6 @@ certifi==2018.4.16
 cffi==1.11.5
 chardet==3.0.4
 click==6.7
-cryptography==1.9
-Flask-Ask==0.9.7
 gunicorn==19.7.1
 idna==2.6
 pycparser==2.18
