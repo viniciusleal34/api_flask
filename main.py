@@ -1,14 +1,25 @@
-import os
-from flask import Flask
+from flask import Flask, request, jsonify
 from flask_cors import CORS
+import os
+
+UPLOAD_FOLDER_INDICE = os.path.join(os.getcwd(), 'static', 'upload')
 
 app = Flask(__name__)
 
 cors = CORS(app, resource={r"/*":{"origins": "*"}})
 
-@app.route("/",methods=['GET'])
+@app.route("/",methods=['GET', 'POST'])
 def index():
-    return "<h1>Helllo Feliz</h1>"
+    if request.method == 'GET':
+        return" <h1> Hello world</h1>"
+    if request.method == 'POST':
+        data = request.files
+      #  savePath = os.path.join(UPLOAD_FOLDER_INDICE, 'gg.jpg')
+       # data.save(savePath)
+        latitude = request.form
+        print(data)
+        print(latitude)
+        return jsonify({"status": "ok"})
 
 
 def main():
