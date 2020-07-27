@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import numpy as np
-import glob
-import pickle as cPickle
+
 
 PATH_DESCRITOR = os.path.join(os.getcwd(),'Descritor','descritores.npy')
 PATH_INDICE = os.path.join(os.getcwd(), 'Descritor','indices.pickel')
